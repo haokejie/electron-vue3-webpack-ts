@@ -1,0 +1,10 @@
+node_modules
+dist
+package.json
+.DS_Store
+
+# local env files
+.vscode
+
+# 发布目录
+release

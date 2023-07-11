@@ -1,0 +1,26 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"sourceMap": false,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["/src/*"],
+			"@c/*": ["/src/components/*"],
+			"@u/*": ["/src/utils/*"]
+		},
+		"lib": ["esnext", "dom", "dom.Iterable"],
+		"types": ["node"],
+		"ignoreDeprecations": "5.0",
+		"jsx": "preserve",
+		"allowJs": true
+	},
+	"include": [
+		"src/**/*.d.ts",
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.jsx",
+		"src/**/*.vue",
+		"types/**/*.d.ts",
+		"electron/**/*.ts"
+	]
+}

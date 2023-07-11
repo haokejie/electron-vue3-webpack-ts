@@ -1,0 +1,9 @@
+{
+  "directories": {
+    "output": "release/macs"
+  },
+  "productName": "测试呀",
+  "appId": "com.electron.test",
+  "asar": true,
+  "asarUnpack": []
+}

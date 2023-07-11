@@ -1,0 +1,3 @@
+*.html
+*.md
+electron/config.json

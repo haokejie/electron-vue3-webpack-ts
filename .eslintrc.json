@@ -1,0 +1,61 @@
+{
+	"parser": "vue-eslint-parser", // 解析器
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020, // 指定js版本
+		"sourceType": "module", // 默认为script，使用es6 module设置为module
+		"parser": {
+			"ts": "@typescript-eslint/parser", // 解析器"
+			"tsx": "@typescript-eslint/parser",
+			"js": "espree"
+		}
+	},
+	"settings": {
+		"import/extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+	},
+	"extends": [
+		// 集成的代码规范
+		"eslint-config-standard",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:vue/vue3-recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:node/recommended",
+		".eslintrc-auto-import.json" // 自动引入
+	],
+	"plugins": ["vue", "@typescript-eslint", "import", "promise", "node"], // 插件
+	"rules": {
+		// 单独配置规则，会覆盖extends的规则
+		"@typescript-eslint/no-var-requires": "off",
+		"@typescript-eslint/ban-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}
+		],
+		"no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}
+		],
+		"vue/multi-word-component-names": "off",
+		// node
+		"node/exports-style": ["error", "module.exports"],
+		"node/no-unsupported-features/es-syntax": "off",
+		"node/no-missing-require": "off",
+		"node/no-unpublished-import": "off",
+		// import
+		"import/default": "off",
+		"import/no-unresolved": "off",
+		"node/no-missing-import": "off",
+		"node/no-unpublished-require": "off"
+	}
+}
