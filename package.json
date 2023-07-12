@@ -13,8 +13,10 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
-			"prettier --write",
-			"eslint --fix"
+			"eslint  --fix --ext .js,.jsx,.ts,.tsx"
+		],
+		"*.{vue}": [
+			"eslint  --fix --ext .vue"
 		]
 	},
 	"main": "dist/electron/main.js",

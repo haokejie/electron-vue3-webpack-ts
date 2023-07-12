@@ -33,7 +33,7 @@ import { Button as AButton } from 'ant-design-vue'
 
 test9({ name: '99' })
 // 打印出process.env 中所有变量
-console.log(process)
+console.log(process, hhh)
 const count = ref(0)
 const add = () => {
   test9({ name: '9aa9' })
