@@ -27,13 +27,12 @@
 <script lang="ts" setup>
 import testcompo from './components/test/testcomp.vue'
 import testtsx from './components/test/testtsx'
-import { hhh } from './test'
 import { test9 } from './utils/index'
 import { Button as AButton } from 'ant-design-vue'
 
 test9({ name: '99' })
 // 打印出process.env 中所有变量
-console.log(process, hhh)
+console.log(process)
 const count = ref(0)
 const add = () => {
   test9({ name: '9aa9' })
