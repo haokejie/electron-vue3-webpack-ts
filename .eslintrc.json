@@ -26,7 +26,7 @@
 		"plugin:node/recommended",
 		".eslintrc-auto-import.json" // 自动引入
 	],
-	"plugins": ["vue", "@typescript-eslint", "import", "promise", "node"], // 插件
+	"plugins": ["vue", "@typescript-eslint", "import", "promise", "node", "html"], // 插件
 	"rules": {
 		// 单独配置规则，会覆盖extends的规则
 		"@typescript-eslint/no-var-requires": "off",
