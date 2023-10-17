@@ -15,6 +15,7 @@ function resolvePath () {
 
 module.exports = (mode) => {
   return {
+    devtool: 'source-map',
     // 关闭log
     stats: {
       logging: 'none',
